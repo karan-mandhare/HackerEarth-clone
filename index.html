@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>HackerEarth | Online coding platform and developer assessment software</title>
+    <link rel="icon" href="." sizes="16x16">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,12 +24,74 @@
         /></a>
         
           <form class="d-flex mx-3" role="search">
-            <button class="btn text-secondary-emphasis link-primary mx-3" type="submit">Login</button>            
-            <button class="btn text-secondary-emphasis border border-secondary btn-outline-primary" type="submit">Sign up</button>
+            <button class="btn text-secondary-emphasis link-primary mx-3" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>          
+            <button class="btn text-secondary-emphasis border border-secondary btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
           </form>
         </div>
       </div>
     </nav>
+
+<!--Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">     
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputname" class="form-label">Username</label>
+            <input type="email" class="form-control mb-1" id="exampleInputname" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="cexampleInputPassword1" class="form-label mt-1">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>        
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class="row mb-2">
       <div class="col-md-6 my-4">
@@ -42,11 +105,12 @@
                     <strong class="d-inline-block mb-2 text-primary-emphasis link-primary">For Developers</strong>
                     <p class="card-text mb-auto">Practice, compete and build with a community of 7.6 million developers.</p>
                     <div class="my-3">
-                      <button type="button" class="btn btn-outline-info">Start Coding</button>
+                      <a href="https://www.hackerearth.com/for-developers/"><button type="button" class="btn btn-outline-info">Start Coding</button></a>
                     </div>
                   </div>
                 </div>
               </div>
+              
               <div class="col-md-6">
                 <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                   <div class="col p-4 d-flex flex-column position-static">
@@ -54,7 +118,7 @@
                     <p class="card-text mb-auto">Engage, assess, interview, learn and upskill developers
                       with ease.</p>
                     <div class="my-3">
-                      <button type="button" class="btn btn-outline-info">Hire Now</button>
+                      <a href="https://www.hackerearth.com/recruit/"><button type="button" class="btn btn-outline-info">Hire Now</button></a>
                     </div>
                   </div>
                 </div>
@@ -143,10 +207,10 @@
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mx-4 my-1 border-top">
         <p>© 2023 Company, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><img class="rounded-square me-1" width="50" height="50" src="./Images/facebook.png" alt=""></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><img class="rounded-square me-1" width="50" height="50" src="./Images/twittern.png" alt=""></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><img class="rounded-square me-1" width="50" height="50" src="./Images/linkedin.png" alt=""></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><img class="rounded-square me-1" width="50" height="50" src="./Images/youtube.png" alt=""></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/HackerEarth/"><img class="rounded-square me-1" width="50" height="50" src="./Images/facebook.png" alt=""></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://twitter.com/HackerEarth?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="rounded-square me-1" width="50" height="50" src="./Images/twittern.png" alt=""></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/company/hackerearth/?originalSubdomain=in"><img class="rounded-square me-1" width="50" height="50" src="./Images/linkedin.png" alt=""></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://www.youtube.com/channel/UCYU6nvKyRYnE5kiG9JXkXpA"><img class="rounded-square me-1" width="50" height="50" src="./Images/youtube.png" alt=""></a></li>
         </ul>
       </div>
     </footer>
